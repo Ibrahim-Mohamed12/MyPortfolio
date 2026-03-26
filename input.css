@@ -4,3 +4,23 @@
 html {
     scroll-behavior: smooth;
 }
+
+@media (max-width: 1416px) {
+  #navLink {
+    display: none !important;
+  }
+
+  #menuToggle {
+    display: block !important;
+  }
+}
+
+@media (min-width: 1417px) {
+  #navLink {
+    display: flex !important;
+  }
+
+  #menuToggle {
+    display: none !important;
+  }
+}
