@@ -2,448 +2,125 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ibrahim Mohamed - Full Stack .NET Developer</title>
-    <link rel="stylesheet" href="./output.css">
-    <link rel="stylesheet" href="./input.css">
-    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - Kelly Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/Logo.png" rel="icon">
+  <link href="assets/img/Logo.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
 </head>
 
-<body class="font-Outfit leading-8 dark:bg-darkTheme dark:text-white">
-    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
-        <img src="./assets/header-bg-color.png" alt="" class="w-full" />
-    </div>
+<body class="index-page">
 
-    <nav id="navbar" class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
-        <p class="bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20 sr-only">
-            Hidden</p>
-        <a href="#!">
-            <img src="./assets/logo.png" alt="Logo" class="w-28 cursor-pointer mr-14 dark:hidden" />
-            <img src="./assets/logo_dark.png" alt="Logo" class="w-28 cursor-pointer mr-14 hidden dark:block" />
-        </a>
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
-        <ul id="navLink"
-            class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo dark:border dark:border-white/30 dark:bg-transparent ">
-            <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#top">Home</a></li>
-            <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#about">About me</a></li>
-            <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#experience">Experience</a></li>
-            <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#work">My Work</a></li>
-            <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#services">Services</a></li>
+      <a href="index.html" class="logo d-flex display-6 align-items-center me-auto me-xl-0">
+        <img src="./assets/img/Logo.png" alt="Logo" class="logo-image">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
 
-        <div class="flex items-center gap-4">
-            <button id="themeToggle">
-                <img src="./assets/moon_icon.png" alt="" class="w-5 dark:hidden" />
-                <img src="./assets/sun_icon.png" alt="" class="w-5 hidden dark:block" />
-            </button>
+      <div class="header-social-links">
+        <a href="https://github.com/Ibrahim-Mohamed12" class="github"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/ibrahim-mohamed-8077b428a/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
 
-            <a href="#contact"
-                class="hidden lg:flex items-center gap-3 px-8 py-1.5 border border-gray-300 hover:bg-slate-100/70 dark:hover:bg-darkHover rounded-full ml-4 font-Ovo dark:border-white/30">
-                Contact
-                <img src="./assets/arrow-icon.png" alt="" class="w-3 dark:hidden" />
-                <img src="./assets/arrow-icon-dark.png" alt="" class="w-3 hidden dark:block" />
-            </a>
+    </div>
+  </header>
 
-            <button class="block md:hidden ml-3" id="menuToggle">
-                <img src="./assets/menu-black.png" alt="" class="w-6 dark:hidden" />
-                <img src="./assets/menu-white.png" alt="" class="w-6 hidden dark:block" />
-            </button>
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="container">
+        <div class="hero-inner">
+
+          <!-- Right Content -->
+          <div class="hero-content" data-aos="fade-right">
+            <h2>Ibrahim Mohamed</h2>
+            <p>I am a Full Stack .NET Developer from Egypt with expertise in ASP.NET Core, C#, SQL Server, and modern web technologies. Passionate about building scalable, clean architecture solutions.</p>
+            <a href="about.html" class="btn-get-started">About Me</a>
+          </div>
+
+          <!-- Left Image -->
+          <div class="hero-image" data-aos="fade-left">
+            <img src="assets/img/hero-bg3.jpeg" alt="Hero Image">
+          </div>
 
         </div>
-        <!-- ----- mobile menu ------ -->
-        <ul id="mobileMenu"
-            class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 font-Ovo dark:bg-darkHover dark:text-white">
+      </div>
 
-            <div class="absolute right-6 top-6" id="menuClose">
-                <img src="./assets/close-black.png" alt="" class="w-5 cursor-pointer dark:hidden" />
-                <img src="./assets/close-white.png" alt="" class="w-5 cursor-pointer hidden dark:block" />
-            </div>
+    </section>
 
-            <li><a href="#top" class="mobileMenuLink">Home</a></li>
-            <li><a href="#about" class="mobileMenuLink">About me</a></li>
-            <li><a href="#experience" class="mobileMenuLink">Experience</a></li>
-            <li><a href="#work" class="mobileMenuLink">My Work</a></li>
-            <li><a href="#services" class="mobileMenuLink">Services</a></li>
-            <li><a href="#contact" class="mobileMenuLink">Contact me</a></li>
-        </ul>
-    </nav>
+  </main>
 
-    <!-- ----- home section ------ -->
-    <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
-        <img src="./assets/profile-img.png" alt="" class="rounded-full w-32" />
-        <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo">
-            Hi! I&apos;m Ibrahim Mohamed
-            <img src="./assets/hand-icon.png" alt="" class="w-6 mb-1" />
-        </h3>
-        <h1 class="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">Full Stack .NET Developer Software Engineer</h1>
-        <p class="max-w-2xl mx-auto font-Ovo">I am a Full Stack .NET Developer from Egypt with expertise in ASP.NET Core, C#, SQL Server, and modern web technologies. Passionate about building scalable, clean architecture solutions.</p>
+  <footer id="footer" class="footer light-background">
 
-        <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
-            <a href="#contact"
-                class="px-10 py-2.5 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2 dark:border-transparent">
-                contact me <img src="./assets/right-arrow-white.png" alt="" class="w-4" />
-            </a>
-
-            <a href="./assets/Resume.pdf" download
-                class="px-10 py-2.5 rounded-full border border-gray-300 dark:border-white/25 hover:bg-slate-100/70 dark:hover:bg-darkHover flex items-center gap-2 bg-white dark:bg-transparent dark:text-white">
-                my resume <img src="./assets/download-icon.png" alt="" class="w-4 dark:invert" />
-            </a>
-        </div>
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Ibrahim Mohamed</strong> <span>All Rights Reserved<br></span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://github.com/Ibrahim-Mohamed12" class="github"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/ibrahim-mohamed-8077b428a/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
+      </div>
     </div>
 
-    <!-- ----- about me section ------ -->
-    <div id="about" class="w-full px-[12%] py-10 scroll-mt-20 flex-row">
-        <h4 class="text-center mb-2 text-lg font-Ovo">Introduction</h4>
-        <h2 class="text-center text-5xl font-Ovo">About me</h2>
-        <div class="flex w-full flex-col lg:flex-row items-center justify-center gap-20 my-20">
-            <div class="max-w-max mx-auto relative"><img src="./assets/profile-img.png" alt=""
-                    class="w-64 sm:w-80 rounded-3xl max-w-none">
-            </div>
-            <div class="flex-1">
-                <p class="mb-10 max-w-4xl font-Ovo">I help businesses bring their ideas to life with websites and online tools that work smoothly, look professional, and help you reach more customers. I handle all the technical work behind the scenes, so you don’t have to worry about anything. My goal is to make your website or app easy to use, reliable, and built just for your business. This way, you save time, avoid stress, and can focus on running your business.</p>
-                <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl">
-                    <li
-                        class="border border-gray-300 dark:border-white/30 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:shadow-white/80 dark:hover:bg-darkHover/50">
-                        <img src="./assets/code-icon.png" alt="" class="w-7 mt-3 dark:hidden"><img
-                            src="./assets/code-icon-dark.png" alt="" class="w-7 mt-3 hidden dark:block">
-                        <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Languages & Frameworks</h3>
-                        <p class="text-gray-600 text-sm dark:text-white/80">C#, JavaScript, Java, C++, SQL, PHP, ASP.NET Core (MVC, Web API), Entity Framework Core, LINQ, HTML5, CSS3, JavaScript, Bootstrap</p>
-                    </li>
-                     <li
-                        class="border border-gray-300 dark:border-white/30 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:shadow-white/80 dark:hover:bg-darkHover/50">
-                        <img src="./assets/code-icon.png" alt="" class="w-7 mt-3 dark:hidden"><img
-                            src="./assets/code-icon-dark.png" alt="" class="w-7 mt-3 hidden dark:block">
-                        <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Soft Skills</h3>
-                        <p class="text-gray-600 text-sm dark:text-white/80">Problem Solving, Communication, Teamwork, Time Management</p>
-                    </li>
-                    <li
-                        class="border border-gray-300 dark:border-white/30 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:shadow-white/80 dark:hover:bg-darkHover/50">
-                        <img src="./assets/code-icon.png" alt="" class="w-7 mt-3 dark:hidden"><img
-                            src="./assets/code-icon-dark.png" alt="" class="w-7 mt-3 hidden dark:block">
-                        <h3 class="my-4 font-semibold text-gray-700 dark:text-white">software Engineering</h3>
-                        <p class="text-gray-600 text-sm dark:text-white/80">OOP, Data Structures, Algorithms, Design Patterns, SOLID, Clean Architecture, SDLC</p>
-                    </li>
-                    <li
-                        class="border border-gray-300 dark:border-white/30 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:shadow-white/80 dark:hover:bg-darkHover/50">
-                        <img src="./assets/edu-icon.png" alt="" class="w-7 mt-3 dark:hidden"><img
-                            src="./assets/edu-icon-dark.png" alt="" class="w-7 mt-3 hidden dark:block">
-                        <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Education</h3>
-                        <p class="text-gray-600 text-sm dark:text-white/80">Faculty of Computers & AI - Cairo University</p>
-                    </li>
-                    <li
-                        class="border border-gray-300 dark:border-white/30 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:shadow-white/80 dark:hover:bg-darkHover/50">
-                        <img src="./assets/project-icon.png" alt="" class="w-7 mt-3 dark:hidden"><img
-                            src="./assets/project-icon-dark.png" alt="" class="w-7 mt-3 hidden dark:block">
-                        <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Projects</h3>
-                        <p class="text-gray-600 text-sm dark:text-white/80">4+ Full Stack Applications</p>
-                    </li>
-                </ul>
-                <h4 class="my-6 text-gray-700 font-Ovo dark:text-white/80">Tools I use</h4>
-                <ul class="flex items-center gap-3 sm:gap-5">
-                    <li
-                        class="flex items-center justify-center w-12 sm:w-14 aspect-square1 border border-gray-300 dark:border-white/30 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        <img src="./assets/vscode.png" alt="vscode" class="w-5 sm:w-7">
-                    </li>
-                    <li
-                        class="flex items-center justify-center w-12 sm:w-14 aspect-square1 border border-gray-300 dark:border-white/30 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        <img src="./assets/Visual_Studio_Icon_2022.svg" alt="visual studio" class="w-5 sm:w-7">
-                    </li>
-                    <li
-                        class="flex items-center justify-center w-12 sm:w-14 aspect-square1 border border-gray-300 dark:border-white/30 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        <img src="./assets/Microsoft_SQL_Server_2025_icon.svg" alt="sql server" class="w-5 sm:w-7">
-                    </li>
-                    <li
-                        class="flex items-center justify-center w-12 sm:w-14 aspect-square1 border border-gray-300 dark:border-white/30 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        <img src="./assets/git.png" alt="git" class="w-5 sm:w-7">
-                    </li>
-                    <li
-                        class="flex items-center justify-center w-12 sm:w-14 aspect-square1 border border-gray-300 dark:border-white/30 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        <img src="./assets/github_logo_icon_229278.svg" alt="github" class="w-5 sm:w-7">
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+  </footer>
 
-    <!-- ----- Professional Experience & Courses Section ------ -->
-    <div id="experience" class="w-full px-[12%] py-10 scroll-mt-20">
-        <h4 class="text-center mb-2 text-lg font-Ovo">Career & Learning</h4>
-        <h2 class="text-center text-5xl font-Ovo">Professional Experience</h2>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-        <div class="mt-12 flex flex-col gap-10 max-w-5xl mx-auto">
+  <!-- Preloader -->
+  <div id="preloader"></div>
 
-            <!-- .NET Back-End Course -->
-            <div class="border border-gray-300 dark:border-white/30 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:shadow-white/80 dark:hover:bg-darkHover/50">
-                <h3 class="text-xl font-semibold mb-1">.NET Back-End Course</h3>
-                <p class="text-gray-700 dark:text-white/80 mb-2">Certificate of Completion | DSC Cairo University | 07/2025 – 10/2025 | Giza</p>
-                <ul class="list-disc list-inside text-gray-600 dark:text-white/80">
-                    <li>- Completed an intensive back-end development course focused on .NET technologies, including C#, ASP.NET, APIs, and database integration.</li>
-                    <li>- Hands-on projects and practical training to reinforce concepts.</li>
-                </ul>
-            </div>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
-            <!-- DEPI Trainee -->
-            <div class="border border-gray-300 dark:border-white/30 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:shadow-white/80 dark:hover:bg-darkHover/50">
-                <h3 class="text-xl font-semibold mb-1">DEPI Trainee</h3>
-                <p class="text-gray-700 dark:text-white/80 mb-2">Full Stack .NET Developer | 11/2025 – Present | Giza, Egypt</p>
-                <ul class="list-disc list-inside text-gray-600 dark:text-white/80">
-                    <li>- Developed full-stack web applications using C#, ASP.NET Core MVC, Web API, SQL Server, and Entity Framework Core.</li>
-                    <li>- Designed and consumed RESTful APIs with proper validation and error handling.</li>
-                    <li>- Implemented authentication and authorization concepts.</li>
-                    <li>- Applied SOLID principles and clean architecture practices.</li>
-                    <li>- Collaborated in an agile team environment using Git and GitHub.</li>
-                </ul>
-            </div>
-
-            <!-- The Data Street -->
-            <div class="border border-gray-300 dark:border-white/30 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:shadow-white/80 dark:hover:bg-darkHover/50">
-                <h3 class="text-xl font-semibold mb-1">The Data Street</h3>
-                <p class="text-gray-700 dark:text-white/80 mb-2">Web Designer | 10/2025 – Present | Remotely</p>
-                <ul class="list-disc list-inside text-gray-600 dark:text-white/80">
-                    <li>- Collaborated with a cross-functional team to design and develop a responsive website using HTML5, CSS3, JavaScript, and Bootstrap.</li>
-                    <li>- Implemented UI/UX design principles to improve usability, layout structure, and visual consistency.</li>
-                    <li>- Translated design requirements and wireframes into clean, maintainable front-end code.</li>
-                    <li>- Ensured cross-browser compatibility and responsive behavior across devices.</li>
-                    <li>- Worked with version control using Git to manage and track code changes.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    
-    <!-- My Work Section -->
-    <div id="work" class="w-full px-[12%] py-10 scroll-mt-20">
-        <h4 class="text-center mb-2 text-lg font-Ovo">My portfolio</h4>
-        <h2 class="text-center text-5xl font-Ovo">My latest work</h2>
-        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">Explore my collection of full-stack projects showcasing expertise in ASP.NET Core, C#, SQL Server, and modern web technologies.</p>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 my-10 gap-5 dark:text-black">
-
-            <!-- Jobify -->
-            <a href="https://github.com/ezzeldin2005/Jobify" target="_blank" rel="noopener noreferrer">
-                <div class="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
-                    style="background-image: url('./assets/Screenshot 2025-12-05 002116.png');">
-                    <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-                        <div>
-                            <h2 class="font-semibold">Jobify</h2>
-                            <p class="text-sm text-gray-700">Job Search Platform</p>
-                        </div>
-                        <div class="border rounded-full border-black w-0 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                            <img src="./assets/send-icon.png" alt="" class="w-5">
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- BookCase -->
-            <a href="https://github.com/Ibrahim-Mohamed12/BookCase" target="_blank" rel="noopener noreferrer">
-                <div class="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
-                    style="background-image: url('./assets/Screenshot 2025-12-06 154033.png');">
-                    <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-                        <div>
-                            <h2 class="font-semibold">BookCase</h2>
-                            <p class="text-sm text-gray-700">Digital Library Platform</p>
-                        </div>
-                        <div class="border rounded-full border-black w-0 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                            <img src="./assets/send-icon.png" alt="" class="w-5">
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Data Street V1 -->
-            <a href="https://ibrahim-mohamed12.github.io/DataStreet_Website/" target="_blank" rel="noopener noreferrer">
-                <div class="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
-                    style="background-image: url('./assets/Screenshot 2025-12-06 154103.png');">
-                    <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-                        <div>
-                            <h2 class="font-semibold">The Data Street V1</h2>
-                            <p class="text-sm text-gray-700">Community Platform</p>
-                        </div>
-                        <div class="border rounded-full border-black w-0 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                            <img src="./assets/send-icon.png" alt="" class="w-5">
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Data Street V2 -->
-            <a href="https://thedatastreet.tech/" target="_blank" rel="noopener noreferrer">
-                <div class="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
-                    style="background-image: url('./assets/Screenshot 2026-02-04 184628.png');">
-                    <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-                        <div>
-                            <h2 class="font-semibold">The Data Street V2</h2>
-                            <p class="text-sm text-gray-700">Community Platform</p>
-                        </div>
-                        <div class="border rounded-full border-black w-0 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                            <img src="./assets/send-icon.png" alt="" class="w-5">
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- VOLE -->
-            <a href="https://github.com/Ibrahim-Mohamed12/Vole_Machine" target="_blank" rel="noopener noreferrer">
-                <div class="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
-                    style="background-image: url('./assets/Screenshot 2025-12-05 005048.png');">
-                    <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-                        <div>
-                            <h2 class="font-semibold">VOLE Machine Simulator</h2>
-                            <p class="text-sm text-gray-700">C++ Application</p>
-                        </div>
-                        <div class="border rounded-full border-black w-0 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                            <img src="./assets/send-icon.png" alt="" class="w-5">
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Fit Finder -->
-            <a href="https://ibrahim-mohamed12.github.io/DataStreet_Website/" target="_blank" rel="noopener noreferrer">
-                <div class="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
-                    style="background-image: url('./assets/Screenshot 2026-03-06 004326.png');">
-                    <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-                        <div>
-                            <h2 class="font-semibold">Fit Finder</h2>
-                            <p class="text-sm text-gray-700">GYM Management & Subscription Platform</p>
-                        </div>
-                        <div class="border rounded-full border-black w-0 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                            <img src="./assets/send-icon.png" alt="" class="w-5">
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-             <!-- Legal UI/UX -->
-            <a href="https://www.figma.com/design/ict5CuSbkEe0wW8bp2P3ER/Legal---Compliance-Platform?m=auto&t=shNUOiAQIBV67ixu-1" target="_blank" rel="noopener noreferrer">
-                <div class="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
-                    style="background-image: url('./assets/Legal.png');">
-                    <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-                        <div>
-                            <h2 class="font-semibold">External Legal Matter Management – UI/UX Design</h2>
-                            <p class="text-sm text-gray-700">Simplified UI for managing external legal cases and collaboration.</p>
-                        </div>
-                        <div class="border rounded-full border-black w-0 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                            <img src="./assets/send-icon.png" alt="" class="w-5">
-                        </div>
-                    </div>
-                </div>
-            </a>
-            
-        </div>
-    </div>
-    <!-- ----- Services Section ------ -->
-    <div id="services" class="w-full px-[12%] py-10 scroll-mt-20">
-        <h4 class="text-center mb-2 text-lg font-Ovo">What I Offer</h4>
-        <h2 class="text-center text-5xl font-Ovo">My Services</h2>
-        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
-            I help businesses and individuals build reliable, modern, and user-friendly digital solutions — without the technical complexity.
-        </p>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 my-10">
-
-            <div class="border border-gray-300 dark:border-white/30 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:shadow-white/80 dark:hover:bg-darkHover/50">
-                <h3 class="font-semibold text-lg mb-3">Custom Websites & Web Applications</h3>
-                <p class="text-sm text-gray-600 dark:text-white/80">
-                    Professional websites and systems tailored to your business needs — designed to look great and work smoothly on all devices.
-                </p>
-            </div>
-
-            <div class="border border-gray-300 dark:border-white/30 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:shadow-white/80 dark:hover:bg-darkHover/50">
-                <h3 class="font-semibold text-lg mb-3">Business Systems & Databases</h3>
-                <p class="text-sm text-gray-600 dark:text-white/80">
-                    Secure and organized solutions to manage your data, customers, and workflows efficiently.
-                </p>
-            </div>
-
-            <div class="border border-gray-300 dark:border-white/30 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:shadow-white/80 dark:hover:bg-darkHover/50">
-                <h3 class="font-semibold text-lg mb-3">Interactive Features</h3>
-                <p class="text-sm text-gray-600 dark:text-white/80">
-                    Smart functionality like dashboards, forms, search tools, and dynamic content to improve user experience.
-                </p>
-            </div>
-
-            <div class="border border-gray-300 dark:border-white/30 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:shadow-white/80 dark:hover:bg-darkHover/50">
-                <h3 class="font-semibold text-lg mb-3">Performance & Optimization</h3>
-                <p class="text-sm text-gray-600 dark:text-white/80">
-                    Enhancing speed, reliability, and responsiveness so your platform runs efficiently.
-                </p>
-            </div>
-
-            <div class="border border-gray-300 dark:border-white/30 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:shadow-white/80 dark:hover:bg-darkHover/50">
-                <h3 class="font-semibold text-lg mb-3">Maintenance & Support</h3>
-                <p class="text-sm text-gray-600 dark:text-white/80">
-                    Continuous improvements, updates, and technical assistance as your business grows.
-                </p>
-            </div>
-
-            <div class="border border-gray-300 dark:border-white/30 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:shadow-white/80 dark:hover:bg-darkHover/50">
-                <h3 class="font-semibold text-lg mb-3">Consultation & Planning</h3>
-                <p class="text-sm text-gray-600 dark:text-white/80">
-                    Guidance on turning ideas into practical digital solutions with clear, simple communication.
-                </p>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- Contact me section -->
-    <div id="contact"
-        class="w-full px-[12%] py-10 scroll-mt-20 bg-[url('./assets/footer-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center dark:bg-none">
-        <h4 class="text-center mb-2 text-lg font-Ovo">Connect with me</h4>
-        <h2 class="text-center text-5xl font-Ovo">Get in touch</h2>
-        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">I'd love to hear from you! Feel free to reach out for collaboration opportunities or any inquiries about my work.
-        </p>
-        <form class="max-w-2xl mx-auto">
-            <input type="hidden" name="subject" value="Ibrahim Mohamed - New form Submission">
-            <div class="grid grid-cols-auto gap-6 mt-10 mb-8">
-                <input type="text" placeholder="Enter your name"
-                    class="flex-1 px-3 py-2 focus:ring-1 outline-none border border-gray-300 dark:border-white/30 rounded-md bg-white dark:bg-darkHover/30"
-                    ] required="" name="name">
-                <input type="email" placeholder="Enter your email" ]
-                    class="flex-1 px-3 py-2 focus:ring-1 outline-none border border-gray-300 dark:border-white/30 rounded-md bg-white dark:bg-darkHover/30"
-                    required="" name="email">
-            </div>
-            <textarea rows="6" placeholder="Enter your message"
-                class="w-full px-4 py-2 focus:ring-1 outline-none border border-gray-300 dark:border-white/30 rounded-md bg-white mb-6 dark:bg-darkHover/30"
-                required="" name="message"></textarea>
-            <button type="submit"
-                class="py-2 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border dark:border-white/30 dark:hover:bg-darkHover">
-                Submit now
-                <img src="./assets/right-arrow-white.png" alt="" class="w-4">
-            </button>
-            <p class="mt-4"></p>
-        </form>
-    </div>
-
-    <!-- Footer -->
-    <div class="mt-20">
-        <div class="text-center">
-            <a href="#!">
-                <img src="./assets/logo.png" alt="" class="w-36 mx-auto mb-2 dark:hidden">
-                <img src="./assets/logo_dark.png" alt="" class="w-36 mx-auto mb-2 hidden dark:block">
-            </a>
-            <div class="w-max flex items-center gap-2 mx-auto">
-                <a href="mailto:hes93314@gmail.com">hes93314@gmail.com</a>
-            </div>
-            <div class="w-max flex items-center gap-2 mx-auto mt-2">
-                <a href="tel:+201015350815">+20 101 535 0815</a>
-            </div>
-        </div>
-        <div class="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-3">
-            <p>© 2025 Ibrahim Mohamed. All rights reserved.</p> 
-            <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
-                <li><a target="_blank" href="https://github.com/Ibrahim-Mohamed12">GitHub</a></li>
-                <li><a target="_blank" href="https://linkedin.com/in/ibrahim-mohamed-8077b428a">LinkedIn</a></li>
-                <li><a target="_blank" href="mailto:hes93314@gmail.com">Email</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <script src="./script.js"></script>
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
 
