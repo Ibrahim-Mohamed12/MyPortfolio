@@ -818,6 +818,10 @@ section,
   margin-right: 10px;
 }
 
+.about .content ul span {
+  overflow-wrap: anywhere;   /* modern best option */
+}
+
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
@@ -1170,6 +1174,8 @@ section,
   font-size: 14px;
   margin: 0;
   color: #9ca3af;
+
+  overflow-wrap: anywhere;   /* modern best option */
 }
 
 /* =========================
