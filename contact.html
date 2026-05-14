@@ -74,39 +74,71 @@
         <div class="contact-div gy-4">
 
           <div class="col-lg-7">
-            <form id="contact-form" class="php-email-form">
-              
+            <form id="contact-form" class="php-email-form ">
+
               <div class="row gy-4">
 
                 <div class="col-md-6">
                   <label for="name-field" class="pb-2">Your Name</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required="" placeholder="Enter Your name">
+                  <input 
+                    type="text" 
+                    name="name" 
+                    id="name-field" 
+                    class="form-control" 
+                    required 
+                    placeholder="Enter Your Name"
+                  >
                 </div>
 
                 <div class="col-md-6">
                   <label for="email-field" class="pb-2">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email-field" required="" placeholder="Enter Your email">
+                  <input 
+                    type="email" 
+                    class="form-control" 
+                    name="email" 
+                    id="email-field" 
+                    required 
+                    placeholder="Enter Your Email"
+                  >
                 </div>
 
                 <div class="col-md-12">
                   <label for="subject-field" class="pb-2">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject-field" required="" placeholder="Enter Subject">
+                  <input 
+                    type="text" 
+                    class="form-control" 
+                    name="subject" 
+                    id="subject-field" 
+                    required 
+                    placeholder="Enter Subject"
+                  >
                 </div>
 
                 <div class="col-md-12">
                   <label for="message-field" class="pb-2">Message</label>
-                  <textarea class="form-control" name="message" rows="10" id="message-field" required="" placeholder="Enter Your Message"></textarea>
+                  <textarea 
+                    class="form-control" 
+                    name="message" 
+                    rows="8" 
+                    id="message-field" 
+                    required 
+                    placeholder="Enter Your Message"
+                  ></textarea>
                 </div>
 
                 <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                  <button type="submit">Send Message</button>
+                  <div class="error-message"></div>
+                  <div class="sent-message"></div>
+
+                  <button type="submit" id="submit-btn">
+                    Send Message
+                  </button>
+
                 </div>
 
               </div>
+
             </form>
           </div><!-- End Contact Form -->
 
@@ -192,6 +224,86 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <script>
+
+    // Init EmailJS
+    emailjs.init("Nwaruj-VG_M0gNqXw");
+
+    // Elements
+    const form = document.getElementById("contact-form");
+    const submitBtn = document.getElementById("submit-btn");
+    const errorMessage = document.querySelector(".error-message");
+    const sentMessage = document.querySelector(".sent-message");
+
+    // Submit
+    form.addEventListener("submit", async (e) => {
+
+      e.preventDefault();
+
+      // Reset Messages
+      errorMessage.style.display = "none";
+      sentMessage.style.display = "none";
+
+      // Loading State
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = "Sending...";
+
+      // Template Params
+      const templateParams = {
+
+        name: document.getElementById("name-field").value,
+
+        email: document.getElementById("email-field").value,
+
+        subject: document.getElementById("subject-field").value,
+
+        message: document.getElementById("message-field").value,
+
+        time: new Date().toLocaleString()
+
+      };
+
+      try {
+
+        // Send Email
+        await emailjs.send(
+          "service_t1uoard",
+          "template_wpzu4rd",
+          templateParams
+        );
+
+        // Success
+        sentMessage.style.display = "block";
+        sentMessage.innerHTML = "Message sent successfully ✓";
+
+        submitBtn.innerHTML = "Sent ✓";
+
+        form.reset();
+
+      } catch (error) {
+
+        console.error(error);
+
+        errorMessage.style.display = "block";
+        errorMessage.innerHTML = "Something went wrong. Please try again.";
+
+        submitBtn.innerHTML = "Failed";
+
+      }
+
+      // Reset Button
+      setTimeout(() => {
+
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = "Send Message";
+
+      }, 3000);
+
+    });
+
+  </script>
 
 </body>
 
